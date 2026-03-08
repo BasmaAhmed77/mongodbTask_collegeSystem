@@ -18,7 +18,7 @@ public class Main {
         MongoCollection<Document> collection= db.getCollection("Students");
         ArrayList<Student> students= new ArrayList<>();
         students.add(new Student("Basma", 20, "Cairo", "100000000000",2));
-        students.add(new Student("Habiba", 17, "Giza", "999999",1));
+        students.add(new Student("Habiba", 22, "Giza", "999999",1));
         students.add(new Student("Salma", 23, "Alex", "87887878",3));
 
 
