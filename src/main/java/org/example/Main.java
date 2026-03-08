@@ -48,7 +48,7 @@ public class Main {
 
         if(doc1 != null) System.out.println("The updated doc: \n"+doc1.toJson());
 
-        collection.deleteMany(Filters.eq("Name","Salma"));
+        collection.deleteOne(Filters.eq("Name","Salma"));
 
         Document doc2= collection.find(Filters.eq("Name","Salma")).first();
         if(doc2 == null) System.out.println("Deleted Successfully");
